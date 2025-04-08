@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root{
+    --color-red: #C01414;
+    --color-blue: #2F41B8;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(45deg, #3A3A3A 0%, #111111 100%); */
+    background-image: url('../img/background.png'), linear-gradient(45deg, #3A3A3A 0%, #111111 100%);
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    /* background-color: white; */
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border-left: 1rem solid;
+    padding-left: 1rem;
+    border-image: linear-gradient(0deg, var(--color-blue) 10%, white, var(--color-red) 90%) 1;
+}
+#border-bottom-right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
