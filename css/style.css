@@ -3,6 +3,8 @@
 :root{
     --color-red: #C01414;
     --color-blue: #2F41B8;
+    --color-red-transparent: #c0141462;
+    --color-blue-transparent: #2f41b860;
 }
 
 *{
@@ -12,27 +14,55 @@
 }
 
 body{
-    /* background: linear-gradient(45deg, #3A3A3A 0%, #111111 100%); */
     background-image: url('../img/background.png'), linear-gradient(45deg, #3A3A3A 0%, #111111 100%);
+    background-repeat: repeat;
+
+
     min-height: 100vh;
-    max-height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.layout{
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    width: 100%;
+    padding: 3rem;
+}
+#columnLeft{
+    width: 1rem;
+    height: 100%;
+
+    background-image: linear-gradient(to bottom, var(--color-red), white, var(--color-blue));
+}
 main{
-    /* background-color: white; */
-    padding: 1rem;
-    border-radius: 0.6rem;
-    border-left: 1rem solid;
-    padding-left: 1rem;
-    border-image: linear-gradient(0deg, var(--color-blue) 10%, white, var(--color-red) 90%) 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #border-bottom-right{
     position: absolute;
     bottom: 0px;
     right: 0px;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+/*****************/
+#logoTitle{
+    width: 65%;
+}
+
+#conversor{
+    background-color: #d9d9d944;
+    background-image: linear-gradient(145deg, var(--color-red-transparent) 0 0, transparent, transparent, var(--color-blue-transparent)100% 100%);
+    border: 1px solid white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+    max-width: 50rem;
+
+    text-align: center;
 }
