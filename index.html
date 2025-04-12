@@ -13,7 +13,25 @@
         <main>
             <img src="img/title.png" alt="título Conversor de temperatura" id="logoTitle">
             <section id="conversor">
-                <article id="selectTemp"></article>
+                <article id="selectsTemp">
+                    <div class="selectsTemp-select">
+                        <select name="tempIn" id="tempIn">
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="celsius">Celsius</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                        <input type="text">
+                    </div>
+                    <button id="btnConvert">Converter</button>
+                    <div class="selectsTemp-select">
+                        <select name="tempIn" id="tempIn">
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="celsius">Celsius</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                        <output for="tempIn" id="output"></output>
+                    </div>
+                </article>
                 <p>Lorem ipsum porta dictum urna integer sapien magna imperdiet tincidunt id eget et vel fermentum lectus egestas ut vulputate sagittis sit facilisi at lectus risus varius arcu dolor risus lectus fermentum ipsum.</p>
             </section>
         </main>
