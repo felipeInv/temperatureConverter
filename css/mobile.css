@@ -1,0 +1,31 @@
+@media screen and (max-width: 40rem) {
+    #selectsTemp{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #logoTitle{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 50rem) {
+    .layout{
+        padding: 1rem;
+        grid-template-rows: 1rem 1fr;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    #columnLeft{
+        width: 100%;
+        background-image: linear-gradient(to left, var(--color-red), white, var(--color-blue));
+    }
+    #logoTitle{
+        width: 80%;
+    }
+    main{
+        gap: 2rem;
+    }
+    #border-bottom-right{
+        display: none;
+    }
+}

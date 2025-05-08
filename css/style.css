@@ -11,11 +11,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
+    transition: 1s;
 }
 
 body{
     background-image: url('../img/background.png'), linear-gradient(45deg, #3A3A3A 0%, #111111 100%);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
     min-height: 100vh;
