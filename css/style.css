@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
 
 :root{
     --color-red: #C01414;
@@ -13,6 +14,7 @@
     box-sizing: border-box;
 
     transition: 1s;
+    font-family: "Inter", sans-serif;
 }
 
 body{
@@ -122,4 +124,10 @@ select{
     border-radius: 0.3rem;
     padding: 0.3rem;
     min-height: 1.8rem;
+}
+
+/****/
+
+#text{
+    font-size: 1.3rem;
 }
